@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+  <html class="no-js lt-ie9" lang="en">
+  <![endif]-->
+<!--[if gt IE 8]>
+    <!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="JPush Offical"> 
+    <title>REST API v3 - Device - 极光文档</title> 
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../client/im_android_api_docs/stylesheet.css" rel="stylesheet">
+    <link href="../../client/jmessage_ios_appledoc_html/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <script>
+    // Current page data
+    var mkdocs_page_name = "REST API v3 - Device";
+    var mkdocs_page_input_path = "server/rest_api_v3_device.md";
+    var mkdocs_page_url = "/server/rest_api_v3_device/";
+    </script>
+    
+    <script src="../../js/jpush.js"></script> 
+</head>
+
+<body data-spy="scroll" data-target="#navbar-right">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3  col-md-3  col-sm-3">
+                    <div id="doc-icon">
+                        <a href="http://192.168.10.162/"><img src="/img/icon/logo.png"></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-8  col-sm-8">
+                    <div class="header">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation">
+                                <a href="/jpush/">JPush</a></li>
+                            <li role="presentation">
+                                <a href="/jmessage/">JMessage</a></li>
+                            <li role="presentation">
+                                <a href="/jsms/">短信验证码</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-md-1 col-sm-1">
+                    <div>
+                        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3  col-md-3 col-sm-4">
+                <div id="navbar-left">
+                    <ul class="wy-menu">
+                        
+                        <li class="subnav">
+                            
+                                <ul class="subnavul">
+                                    <li class="subnavli_single">
+                                        <span>
+                          <a href="../..">JPush 文档</a></span>
+                                    </li>
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    入门指南 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../guideline/faq/">常见问题</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/android_guide/">JPush Android 集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/ios_guide/">JPush iOS 集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/winphone_guide/">JPush WinPhone 集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/android_3m/">3 分钟集成 Android SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/sample_code/">示例与代码</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/statistical_report/">控制台使用指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/JSMS_guide/">短信验证</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/Android_SMS_SDK/">Android 短信验证集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/iOS_SMS_SDK/">iOS 短信验证集成指南</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    客户端 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../client/android_sdk/">Android SDK 概述</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/android_tutorials/">Android SDK 教程</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/android_api/">Android SDK API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/ios_sdk/">iOS SDK 概述</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/ios_tutorials/">iOS SDK 教程</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/ios_api/">iOS SDK API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/winphone_sdk/">WinPhone SDK 概述</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/winphone_api/">WinPhone SDK API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/client_plugins/">客户端集成插件</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    服务器端 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../server_overview/">服务器端 概述</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_v3_push/">REST API v3 - Push</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_v3_report/">REST API v3 - Report</a>
+    </li>      <li class="toctree-l1 current">
+        <a class="current" href="./">REST API v3 - Device</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_push_schedule/">REST API v3 - Schedule</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_v2_push/">REST API v2 - Push</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_v2_report/">REST API v2 - Report</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_jsms/">短信 REST API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../http_status_code/">HTTP 状态码</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../java_sdk/">Java SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../python_sdk/">Python SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../php_sdk/">PHP SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../ruby_sdk/">Ruby SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../csharp_sdk/">C# SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../nodejs_sdk/">Node.js SDK</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    高级 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../advanced/scenes/">JPush应用场景</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../advanced/topics/">JPush高级话题</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../advanced/rich_push/">Rich Push 入门指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../advanced/jmessage_topics/">JMessage高级话题</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    更多 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../more/use_license/">使用许可协议</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../more/contact_us/">联系我们</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                                <ul class="subnavul">
+                                    <li class="subnavli_single">
+                                        <span>
+                          <a href="../../updates/">最近更新</a></span>
+                                    </li>
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    资源下载 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../resources/">JPush</a>
+    </li>  
+                                </ul>
+                                <li></ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8  col-md-9  col-sm-8">
+                <div id="content-top"></div>
+                <section>
+                    <div class="rst-content"><div id="breadcrumbs" role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">极光文档</a>></li>
+    
+      
+        
+          <li><a href="../server_overview/">服务器端</a> ></li>
+        
+      
+    
+    <li>
+    REST API v3 - Device
+    <!--
+    <a href="./">REST API v3 - Device</a>
+    -->
+    </li>
+  </ul>
+</div>
+                        <div role="main">
+                            <div class="section"> <h1 id="device-api">Device-API</h1>
+<div style="font-size:13px;background: #E0EFFE;border: 1px solid #ACBFD7;border-radius: 3px;padding: 8px 16px;">
+<p> Device API 用于在服务器端查询、设置、更新、删除设备的 tag,alias 信息，使用时需要注意不要让服务端设置的标签又被客户端给覆盖了。</p>
+<ul style="margin-bottom: 0;">
+   <li>如果不是熟悉 tag，alias的逻辑建议只使用客户端或服务端二者中的一种。</li>
+   <li>如果是两边同时使用，请确认自己应用可以处理好标签和别名的同步。</li>
+ </ul>
+</div>
+
+<p><br></p>
+<ul>
+<li>
+<p>需要了解tag,alias的详细信息，请参考对应客户端平台的API说明。</p>
+<ul>
+<li><a href="../../../client/android_api/#api_1">Android - tag,alias</a></li>
+<li><a href="../../../client/ios_api/#api-ios">iOS - tag,alias</a></li>
+<li><a href="../../../client/winphone_api/#api_1">WinPhone - tag,alias</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="api">API 概述</h3>
+<p>Device API 用于在服务器端查询、设置、更新、删除设备的 tag,alias 信息。</p>
+<p>包含了device, tag, alias 三组API。其中：</p>
+<ul>
+<li>device 用于查询/设置设备的各种属性，包含tags, alias；</li>
+<li>tag 用于查询/设置/删除设备的标签；</li>
+<li>alias 用于查询/设置/删除设备的别名。</li>
+</ul>
+<p>API URL: <a href="https://device.jpush.cn">https://device.jpush.cn</a></p>
+<h3 id="device">Device</h3>
+<h4 id="_1">查询设备(设备的别名与标签)</h4>
+<pre><code>GET /v3/devices/{registration_id}
+获取当前设备的所有属性，包含tags, alias，手机号码mobile。
+</code></pre>
+
+<h5 id="example-request">Example Request</h5>
+<h6 id="request-header">Request Header</h6>
+<pre><code>GET /v3/devices/{registration_id}
+  Authorization: Basic (base64 auth string) 
+  Accept: application/json
+</code></pre>
+
+<h6 id="request-params">Request Params</h6>
+<ul>
+<li>N/A</li>
+</ul>
+<h5 id="example-response">Example Response</h5>
+<h6 id="response-header">Response Header</h6>
+<pre><code>HTTP/1.1 200 OK 
+  Content-Type: application/json; charset=utf-8
+</code></pre>
+
+<h6 id="response-data">Response Data</h6>
+<pre><code>{
+     &quot;tags&quot;: [&quot;tag1&quot;, &quot;tag2&quot;],
+     &quot;alias&quot;: &quot;alias1&quot;,
+     &quot;mobile&quot;: &quot;13012345678&quot;
+}
+</code></pre>
+
+<ul>
+<li>找不到统计项就是null,否则为统计项的值</li>
+</ul>
+<h4 id="_2">更新设备 （设备的别名与标签）</h4>
+<p>使用短信业务，请结合服务端<a href="../../server/rest_api_v3_push/#sms_message">SMS_MESSAGE</a>字段</p>
+<pre><code>POST /v3/devices/{registration_id}
+更新当前设备的指定属性，当前支持tags, alias，手机号码mobile。
+</code></pre>
+
+<h5 id="example-request_1">Example Request</h5>
+<h6 id="request-header_1">Request Header</h6>
+<pre><code>POST /v3/devices/{registration_id}
+  Authorization: Basic (base64 auth string) 
+  Accept: application/json
+</code></pre>
+
+<h6 id="request-body">Request Body</h6>
+<pre><code>{  
+        &quot;tags&quot;:{
+            &quot;add&quot;: [
+                &quot;tag1&quot;,
+                &quot;tag2&quot;
+            ],
+            &quot;remove&quot;: [
+                &quot;tag3&quot;,
+                &quot;tag4&quot;
+            ]
+        },
+        &quot;alias&quot;: &quot;alias1&quot;,
+        &quot;mobile&quot;:&quot;13012345678&quot;
+    } 
+
+</code></pre>
+
+<h6 id="request-params_1">Request Params</h6>
+<ul>
+<li>tags:  支持add, remove 或者空字符串。当tags参数为空字符串的时候，表示清空所有的 tags；add/remove 下是增加或删除指定的 tag；</li>
+<li>alias:  更新设备的别名属性；当别名为空串时，删除指定设备的别名；</li>
+</ul>
+<h5 id="example-response_1">Example Response</h5>
+<h6 id="response-header_1">Response Header</h6>
+<pre><code>HTTP/1.1 200 OK 
+  Content-Type: application/json; charset=utf-8
+</code></pre>
+
+<h6 id="response-data_1">Response Data</h6>
+<ul>
+<li>N/A</li>
+</ul>
+<h3 id="tag">Tag</h3>
+<h4 id="_3">查询标签列表</h4>
+<pre><code>GET /v3/tags/
+获取当前应用的所有标签列表。
+</code></pre>
+
+<h5 id="example-request_2">Example Request</h5>
+<h6 id="request-header_2">Request Header</h6>
+<pre><code>GET /v3/tags/
+  Authorization: Basic (base64 auth string) 
+  Accept: application/json
+</code></pre>
+
+<h6 id="request-params_2">Request Params</h6>
+<ul>
+<li>None</li>
+</ul>
+<h5 id="example-request_3">Example Request</h5>
+<h6 id="response-header_2">Response Header</h6>
+<pre><code>HTTP/1.1 200 OK 
+  Content-Type: application/json; charset=utf-8
+</code></pre>
+
+<h6 id="response-data_2">Response Data</h6>
+<pre><code>{
+     &quot;tags&quot;: [&quot;tag1&quot;, &quot;tag2&quot;]
+}
+</code></pre>
+
+<ul>
+<li>找不到统计项就是 null，否则为统计项的值。</li>
+</ul>
+<h4 id="_4">判断设备与标签的绑定</h4>
+<pre><code>GET /v3/tags/{tag_value}/registration_ids/{registration_id}
+查询某个设备是否在 tag 下。
+</code></pre>
+
+<h5 id="example-request_4">Example Request</h5>
+<h6 id="request-header_3">Request Header</h6>
+<pre><code>GET /v3/tags/{tag_value}/registration_ids/090c1f59f89
+  Authorization: Basic (base64 auth string) 
+  Accept: application/json
+</code></pre>
+
+<h6 id="request-params_3">Request Params</h6>
+<ul>
+<li>registration_id  必须，设备的registration_id</li>
+</ul>
+<h5 id="example-response_2">Example Response</h5>
+<h6 id="response-header_3">Response Header</h6>
+<pre><code>HTTP/1.1 200 OK 
+  Content-Type: application/json; charset=utf-8
+</code></pre>
+
+<h6 id="response-data_3">Response Data</h6>
+<pre><code>{
+     &quot;result&quot;: true/false
+}
+</code></pre>
+
+<h4 id="_5">更新标签 （与设备的绑定的关系）</h4>
+<pre><code>POST /v3/tags/{tag_value}
+为一个标签添加或者删除设备。
+</code></pre>
+
+<h5 id="example-request_5">Example Request</h5>
+<h6 id="request-header_4">Request Header</h6>
+<pre><code>POST /v3/tags/{tag_value}
+  Authorization: Basic (base64 auth string) 
+  Accept: application/json 
+</code></pre>
+
+<h6 id="request-body_1">Request Body</h6>
+<pre><code>{  
+        &quot;registration_ids&quot;:{
+            &quot;add&quot;: [
+                &quot;registration_id1&quot;,
+                &quot;registration_id2&quot;
+            ],
+            &quot;remove&quot;: [
+                &quot;registration_id3&quot;,
+                &quot;registration_id4&quot;
+            ]
+        }
+}
+</code></pre>
+
+<h6 id="request-params_4">Request Params</h6>
+<ul>
+<li>action操作类型，有两个可选："add"，"remove"，标识本次请求是"添加"还是"删除"。</li>
+<li>registration_ids  需要添加/删除的设备registration_id。</li>
+<li>add/remove最多各支持1000个；</li>
+</ul>
+<h5 id="example-response_3">Example Response</h5>
+<h6 id="response-header_4">Response Header</h6>
+<pre><code>HTTP/1.1 200 OK 
+ Content-Type: application/json; charset=utf-8
+</code></pre>
+
+<h6 id="response-data_4">Response Data</h6>
+<ul>
+<li>N/A</li>
+</ul>
+<h4 id="_6">删除标签 (与设备的绑定关系)</h4>
+<pre><code>DELETE /v3/tags/{tag_value}
+删除一个标签，以及标签与设备之间的关联关系。
+</code></pre>
+
+<h5 id="example-request_6">Example Request</h5>
+<h6 id="request-header_5">Request Header</h6>
+<pre><code>DELETE /v3/tags/{tag_value}?platform=android,ios
+  Authorization: Basic (base64 auth string) 
+  Accept: application/json 
+</code></pre>
+
+<h6 id="request-params_5">Request Params</h6>
+<ul>
+<li>platform 可选参数，不填则默认为所有平台。</li>
+</ul>
+<h5 id="example-response_4">Example Response</h5>
+<ul>
+<li>N/A</li>
+</ul>
+<h3 id="alias">Alias</h3>
+<h4 id="_7">查询别名 （与设备的绑定关系）</h4>
+<pre><code>GET /v3/aliases/{alias_value}
+获取指定alias下的设备，最多输出10个；
+</code></pre>
+
+<h5 id="example-request_7">Example Request</h5>
+<h6 id="request-header_6">Request Header</h6>
+<pre><code>GET /v3/aliases/{alias_value}?platform=android,ios
+  Authorization: Basic (base64 auth string) 
+  Accept: application/json
+</code></pre>
+
+<h6 id="request-params_6">Request Params</h6>
+<ul>
+<li>platform 可选参数，不填则默认为所有平台。</li>
+</ul>
+<h5 id="example-response_5">Example Response</h5>
+<h6 id="response-header_5">Response Header</h6>
+<pre><code>HTTP/1.1 200 OK 
+  Content-Type: application/json; charset=utf-8
+</code></pre>
+
+<h6 id="response-data_5">Response Data</h6>
+<pre><code>{
+     &quot;registration_ids&quot;: [&quot;registration_id1&quot;, &quot;registration_id2&quot;]
+}
+</code></pre>
+
+<ul>
+<li>找不到统计项就是 null，否则为统计项的值。</li>
+</ul>
+<h4 id="_8">删除别名 （与设备的绑定关系）</h4>
+<pre><code>DELETE /v3/aliases/{alias_value}
+删除一个别名，以及该别名与设备的绑定关系。
+</code></pre>
+
+<h5 id="example-request_8">Example Request</h5>
+<h6 id="request-header_7">Request Header</h6>
+<pre><code>DELETE /v3/aliases/{alias_value}?platform=android,ios
+  Authorization: Basic (base64 auth string) 
+  Accept: application/json
+</code></pre>
+
+<h6 id="request-params_7">Request Params</h6>
+<ul>
+<li>platform 可选参数，不填则默认为所有平台。</li>
+</ul>
+<h5 id="example-response_6">Example Response</h5>
+<h6 id="response">Response</h6>
+<ul>
+<li>N/A</li>
+</ul>
+<h3 id="vip">获取用户在线状态（VIP专属接口）</h3>
+<p>如需要开通此接口，请联系：<a href="https://www.jpush.cn/common/price">商务客服</a></p>
+<h4 id="example-request_9">Example Request</h4>
+<h5 id="request-header_8">Request Header</h5>
+<pre><code>POST /v3/devices/status/
+  Authorization: Basic (base64 auth string) 
+  Accept: application/json
+</code></pre>
+
+<h5 id="request-data">Request Data</h5>
+<pre><code>{
+  &quot;registration_ids&quot;:[&quot;010b81b3582&quot;, &quot;0207870f1b8&quot;, &quot;0207870f9b8&quot;]
+}
+</code></pre>
+
+<h5 id="request-params_8">Request Params</h5>
+<ul>
+<li>registration_ids  需要在线状态的用户registration_id， 最多支持查询1000个registration_id；</li>
+<li>需要申请开通了这个业务的 Appkey 才可以调用此 API。</li>
+</ul>
+<h4 id="example-response_7">Example Response</h4>
+<h5 id="response-header_6">Response Header</h5>
+<pre><code>HTTP/1.1 200 OK 
+  Content-Type: application/json; charset=utf-8
+</code></pre>
+
+<h5 id="response-data_6">Response Data</h5>
+<pre><code>{
+     &quot;010b81b3582&quot;: {
+         &quot;online&quot;: true
+     }, 
+     &quot;0207870f1b8&quot;: {
+          &quot;online&quot;: false,
+          &quot;last_online_time&quot;: &quot;2014-12-16 10:57:07&quot;
+     },
+     &quot;0207870f9b8&quot;: {
+          &quot;online&quot;: false
+    }
+}
+</code></pre>
+
+<h5 id="response-params">Response Params</h5>
+<ul>
+<li>
+<p>online </p>
+<ul>
+<li>true: 10分钟之内在线； </li>
+<li>false: 10分钟之内不在线；</li>
+</ul>
+</li>
+<li>
+<p>last_online_time</p>
+<ul>
+<li>当online为true时，该字段不返回;</li>
+<li>当online为false，且该字段不返回时，则表示最后一次在线时间是两天之前；</li>
+</ul>
+</li>
+<li>
+<p>对于无效的regid或者不属于该appkey的regid，该registration id返回的结果为空;</p>
+</li>
+</ul>
+<h3 id="_9">调用返回</h3>
+<h4 id="http">HTTP 状态码</h4>
+<p>参考文档：<a href="../../server/http_status_code">Http-Status-Code</a></p>
+<h4 id="_10">业务返回码</h4>
+<div class="table-d" align="center" >
+  <table border="1" width = "100%">
+    <tr  bgcolor="#D3D3D3" >
+      <th >Code</th>
+      <th >描述</th>
+      <th style="t;" >详细解释</th>
+      <th >HTTP Status Code</th>
+    </tr>
+    <tr >
+      <td>7000</td>
+      <td>内部错误</td>
+      <td>系统内部错误</a></td>
+      <td>500</td>
+    </tr>
+    <tr >
+      <td>7001</td>
+      <td>校验信息为空</td>
+      <td>必须改正，详情请看：<a href="./#_1">调用验证说明。</a></td>
+      <td>401</td>
+    </tr>
+    <tr >
+      <td>7002</td>
+      <td>请求参数非法</td>
+      <td>必须改正</td>
+      <td>400</td>
+    </tr>
+    <tr >
+      <td>7004</td>
+      <td>校验失败</td>
+      <td>必须修正，详情请看：<a href="./#_1">调用验证说明。</a></td>
+      <td>401</td>
+    </tr>
+    <tr >
+      <td>7008</td>
+      <td>appkey 不存在</td>
+      <td>检查工程填写的appkey是否与官网应用一致</td>
+      <td>400</td>
+    </tr>
+  </table>
+</div> </div>
+                        </div> <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../rest_api_push_schedule/" class="btn btn-neutral float-right" title="REST API v3 - Schedule">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../rest_api_v3_report/" class="btn btn-neutral float-left" title="REST API v3 - Report"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright 2011-2016, jiguang.cn, All Rights Reserved. <br />粤ICP备12056275号-5 深圳市和讯华谷信息技术有限公司</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer> </div>
+                </section>
+            </div>
+            <div class="col-lg-1">
+                <div class="visible-lg">
+                    <div id="tocright">
+                        <div id="navbar-right">
+                            <div>
+                                <p>目录</p>
+                            </div>
+                            
+	<ul class="nav" >
+    
+        
+            <li><a href="#api">API 概述</a></li>
+        
+            <li><a href="#device">Device</a></li>
+        
+            <li><a href="#tag">Tag</a></li>
+        
+            <li><a href="#alias">Alias</a></li>
+        
+            <li><a href="#vip">获取用户在线状态（VIP专属接口）</a></li>
+        
+            <li><a href="#_9">调用返回</a></li>
+        
+    
+    </ul>
+    
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

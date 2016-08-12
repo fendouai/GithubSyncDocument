@@ -1,0 +1,10 @@
+app_key: <%= ENV['app_key'] %>
+master_secret: <%= ENV['master_secret'] %>
+registration_ids:
+  common: <%= ENV['rid_common'] %>
+  common2: <%= ENV['rid_common2'] %>
+  android: <%= ENV['rid_android'] %>
+  ios: <%= ENV['rid_ios'] %>
+tags:
+  common: <%= ENV['tags_common'] %>
+report_delay_time: <%= ENV['report_delay_time'] %>

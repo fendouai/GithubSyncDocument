@@ -1,0 +1,38 @@
+site_name: 极光文档
+site_author: JPush Offical
+site_url: http://docs.jpush.io
+site_favicon: favicon.ico
+site_description: JPush, JMessage, 极光推送, 极光IM, Android Push, Android 推送, 安卓推送, iOS Push, APNs, Push Notification
+copyright: Copyright 2011-2016, jiguang.cn, All Rights Reserved. <br />粤ICP备12056275号-13 深圳市和讯华谷信息技术有限公司
+theme: readthedocs
+
+pages:
+- JSMS 首页: 'index.md'
+
+- 入门指南:
+  - '常见问题': 'guideline/faq.md'
+  - '短信验证': 'guideline/JSMS_guide.md'
+  - 'Android 短信验证集成指南': 'guideline/Android_SMS_SDK.md'
+  - 'iOS 短信验证集成指南': 'guideline/iOS_SMS_SDK.md'
+
+- 服务器端:
+  - '短信 REST API': 'server/rest_api_jsms.md'
+
+- 高级:
+  - 'JPush应用场景': 'advanced/scenes.md'
+  - 'JPush高级话题': 'advanced/topics.md'
+  - 'Rich Push 入门指南': 'advanced/rich_push.md'
+  - 'IM 消息协议': 'advanced/im_message_protocol.md'
+  - 'IM 对象定义': 'advanced/im_objects.md'
+  - 'JMessage高级话题': 'advanced/jmessage_topics.md'
+
+- 更多:
+  - '使用许可协议': 'more/use_license.md'
+  - '联系我们': 'more/contact_us.md'
+
+- 最近更新: 'updates.md'
+
+- 资源下载:
+  - JPush: 'resources.md'
+  - JMessage: 'resources_jmessage.md'
+

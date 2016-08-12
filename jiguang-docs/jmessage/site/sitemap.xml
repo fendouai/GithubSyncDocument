@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://docs.jpush.io/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://docs.jpush.io/guideline/jmessage_guide/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://docs.jpush.io/guideline/jmessage_android_guide/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://docs.jpush.io/guideline/jmessage_ios_guide/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://docs.jpush.io/client/im_sdk_android/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://docs.jpush.io/client/im_sdk_ios/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://docs.jpush.io/client/im_errorcode/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://docs.jpush.io/server/server_overview/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://docs.jpush.io/server/rest_api_im/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://docs.jpush.io/server/rest_api_im_report/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://docs.jpush.io/advanced/im_message_protocol/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://docs.jpush.io/advanced/im_objects/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://docs.jpush.io/advanced/jmessage_topics/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://docs.jpush.io/more/use_license/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://docs.jpush.io/more/contact_us/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>http://docs.jpush.io/updates/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://docs.jpush.io/resources/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://docs.jpush.io/resources_jmessage/</loc>
+     <lastmod>2016-08-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

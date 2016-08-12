@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+  <html class="no-js lt-ie9" lang="en">
+  <![endif]-->
+<!--[if gt IE 8]>
+    <!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="JPush Offical"> 
+    <title>短信 REST API - 极光文档</title> 
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../client/im_android_api_docs/stylesheet.css" rel="stylesheet">
+    <link href="../../client/jmessage_ios_appledoc_html/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <script>
+    // Current page data
+    var mkdocs_page_name = "短信 REST API";
+    var mkdocs_page_input_path = "server/rest_api_jsms.md";
+    var mkdocs_page_url = "/server/rest_api_jsms/";
+    </script>
+    
+    <script src="../../js/jpush.js"></script> 
+</head>
+
+<body data-spy="scroll" data-target="#navbar-right">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3  col-md-3  col-sm-3">
+                    <div id="doc-icon">
+                        <a href="http://192.168.10.162/"><img src="/img/icon/logo.png"></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-8  col-sm-8">
+                    <div class="header">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation">
+                                <a href="/jpush/">JPush</a></li>
+                            <li role="presentation">
+                                <a href="/jmessage/">JMessage</a></li>
+                            <li role="presentation">
+                                <a href="/jsms/">短信验证码</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-md-1 col-sm-1">
+                    <div>
+                        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3  col-md-3 col-sm-4">
+                <div id="navbar-left">
+                    <ul class="wy-menu">
+                        
+                        <li class="subnav">
+                            
+                                <ul class="subnavul">
+                                    <li class="subnavli_single">
+                                        <span>
+                          <a href="../..">JPush 文档</a></span>
+                                    </li>
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    入门指南 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../guideline/faq/">常见问题</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/android_guide/">JPush Android 集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/ios_guide/">JPush iOS 集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/winphone_guide/">JPush WinPhone 集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/android_3m/">3 分钟集成 Android SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/sample_code/">示例与代码</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/statistical_report/">控制台使用指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/JSMS_guide/">短信验证</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/Android_SMS_SDK/">Android 短信验证集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/iOS_SMS_SDK/">iOS 短信验证集成指南</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    客户端 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../client/android_sdk/">Android SDK 概述</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/android_tutorials/">Android SDK 教程</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/android_api/">Android SDK API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/ios_sdk/">iOS SDK 概述</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/ios_tutorials/">iOS SDK 教程</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/ios_api/">iOS SDK API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/winphone_sdk/">WinPhone SDK 概述</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/winphone_api/">WinPhone SDK API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../client/client_plugins/">客户端集成插件</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    服务器端 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../server_overview/">服务器端 概述</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_v3_push/">REST API v3 - Push</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_v3_report/">REST API v3 - Report</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_v3_device/">REST API v3 - Device</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_push_schedule/">REST API v3 - Schedule</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_v2_push/">REST API v2 - Push</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../rest_api_v2_report/">REST API v2 - Report</a>
+    </li>      <li class="toctree-l1 current">
+        <a class="current" href="./">短信 REST API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../http_status_code/">HTTP 状态码</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../java_sdk/">Java SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../python_sdk/">Python SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../php_sdk/">PHP SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../ruby_sdk/">Ruby SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../csharp_sdk/">C# SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../nodejs_sdk/">Node.js SDK</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    高级 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../advanced/scenes/">JPush应用场景</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../advanced/topics/">JPush高级话题</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../advanced/rich_push/">Rich Push 入门指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../advanced/jmessage_topics/">JMessage高级话题</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    更多 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../more/use_license/">使用许可协议</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../more/contact_us/">联系我们</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                                <ul class="subnavul">
+                                    <li class="subnavli_single">
+                                        <span>
+                          <a href="../../updates/">最近更新</a></span>
+                                    </li>
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    资源下载 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../resources/">JPush</a>
+    </li>  
+                                </ul>
+                                <li></ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8  col-md-9  col-sm-8">
+                <div id="content-top"></div>
+                <section>
+                    <div class="rst-content"><div id="breadcrumbs" role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">极光文档</a>></li>
+    
+      
+        
+          <li><a href="../server_overview/">服务器端</a> ></li>
+        
+      
+    
+    <li>
+    短信 REST API
+    <!--
+    <a href="./">短信 REST API</a>
+    -->
+    </li>
+  </ul>
+</div>
+                        <div role="main">
+                            <div class="section"> <h1 id="sms-code-api-v1">SMS Code API v1</h1>
+<blockquote>
+<p>SMS Code API</p>
+<p>发送短信验证码</p>
+<p>验证短信验证码</p>
+<p>基于HTTPS请求</p>
+<p>使用 HTTP Basic Authentication 的方式做访问授权</p>
+<p>请求和返回的body都传递JSON格式</p>
+</blockquote>
+<h4 id="api">发送验证码API</h4>
+<h5 id="_1">功能说明</h5>
+<ul>
+<li>向手机号下发短信验证码。</li>
+</ul>
+<h5 id="_2">调用地址</h5>
+<ul>
+<li>POST https://api.sms.jpush.cn/v1/codes</li>
+</ul>
+<h5 id="_3">请求示例</h5>
+<pre><code>curl --insecure -X POST -v https://api.sms.jpush.cn/v1/codes -H &quot;Content-Type: application/json&quot; -u &quot;7d431e42dfa6a6d693ac2d04:5e987ac6d2e04d95a9d8f0d1&quot; -d '{&quot;mobile&quot;:&quot;18611111111&quot;,&quot;temp_id&quot;:1}'
+
+</code></pre>
+
+<h5 id="_4">参数</h5>
+<table>
+<thead>
+<tr>
+<th>KEY</th>
+<th>REQUIRE</th>
+<th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mobile</td>
+<td>TRUE</td>
+<td>手机号码</td>
+</tr>
+<tr>
+<td>temp_id</td>
+<td>TRUE</td>
+<td>模板ID</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_5">返回示例</h5>
+<pre><code>&lt; HTTP/1.1 200 OK
+&lt; Content-Type: application/json
+{&quot;msg_id&quot;:&quot;06890980-6789-4054-bba9-90fb66ab2fce&quot;}
+
+</code></pre>
+
+<h5 id="_6">调用验证</h5>
+<p>HTTP Header（头）里加一个字段（Key/Value对）：</p>
+<pre><code>Authorization: Basic base64_auth_string
+</code></pre>
+
+<p>其中 base64_auth_string 的生成算法为：base64(appKey:masterSecret)</p>
+<p>即:对 appKey 加上冒号，加上 masterSecret 拼装起来的字符串，再做 base64 转换。</p>
+<h4 id="api_1">验证API</h4>
+<h5 id="_7">功能说明</h5>
+<ul>
+<li>验证短信验证码是否有效。</li>
+</ul>
+<h5 id="_8">调用地址</h5>
+<ul>
+<li>POST https://api.sms.jpush.cn/v1/codes/{msg_id}/valid
+(注:msg_id为调用发送验证码API的返回值)</li>
+</ul>
+<h5 id="_9">请求示例</h5>
+<pre><code>curl --insecure -X POST -v https://api.sms.jpush.cn/v1/codes/06890980-6789-4054-bba9-90fb66ab2fce/valid -d '{&quot;code&quot;:&quot;123456&quot;}'
+
+</code></pre>
+
+<h5 id="_10">参数</h5>
+<table>
+<thead>
+<tr>
+<th>KEY</th>
+<th>REQUIRE</th>
+<th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>TRUE</td>
+<td>验证码</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_11">返回示例</h5>
+<ul>
+<li>
+<p>验证通过</p>
+<p><code>json
+{
+    "is_valid":true
+}</code></p>
+</li>
+<li>
+<p>验证不通过</p>
+<p><code>json
+{
+    "is_valid":false
+    "error":{
+        "code":***,//具体对照返回码表
+        "message":"***"
+    }
+}</code></p>
+</li>
+</ul>
+<h3 id="_12">返回码</h3>
+<table>
+<thead>
+<tr>
+<th align="left">HTTP CODE</th>
+<th align="left">CODE</th>
+<th align="left">CONTENT</th>
+<th align="left">DESC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">200</td>
+<td align="left">50000</td>
+<td align="left">success</td>
+<td align="left">请求成功</td>
+</tr>
+<tr>
+<td align="left">400</td>
+<td align="left">50001</td>
+<td align="left">missing auth</td>
+<td align="left">auth为空</td>
+</tr>
+<tr>
+<td align="left">401</td>
+<td align="left">50002</td>
+<td align="left">auth failed</td>
+<td align="left">auth鉴权失败</td>
+</tr>
+<tr>
+<td align="left">400</td>
+<td align="left">50003</td>
+<td align="left">missing body</td>
+<td align="left">body为空</td>
+</tr>
+<tr>
+<td align="left">400</td>
+<td align="left">50004</td>
+<td align="left">missing mobile</td>
+<td align="left">mobile为空</td>
+</tr>
+<tr>
+<td align="left">400</td>
+<td align="left">50005</td>
+<td align="left">missing  temp_id</td>
+<td align="left">temp_id为空</td>
+</tr>
+<tr>
+<td align="left">403</td>
+<td align="left">50006</td>
+<td align="left">invalid mobile</td>
+<td align="left">mobile无效</td>
+</tr>
+<tr>
+<td align="left">403</td>
+<td align="left">50007</td>
+<td align="left">invalid body</td>
+<td align="left">body无效</td>
+</tr>
+<tr>
+<td align="left">403</td>
+<td align="left">50008</td>
+<td align="left">no sms code auth</td>
+<td align="left">没有短信验证权限</td>
+</tr>
+<tr>
+<td align="left">403</td>
+<td align="left">50009</td>
+<td align="left">out of freq</td>
+<td align="left">发送超频</td>
+</tr>
+<tr>
+<td align="left">403</td>
+<td align="left">50010</td>
+<td align="left">invalid code</td>
+<td align="left">验证码无效</td>
+</tr>
+<tr>
+<td align="left">403</td>
+<td align="left">50011</td>
+<td align="left">expired code</td>
+<td align="left">验证码过期</td>
+</tr>
+<tr>
+<td align="left">403</td>
+<td align="left">50012</td>
+<td align="left">verified code</td>
+<td align="left">验证码已验证过</td>
+</tr>
+<tr>
+<td align="left">403</td>
+<td align="left">50013</td>
+<td align="left">invalid temp_id</td>
+<td align="left">无效temp_id</td>
+</tr>
+<tr>
+<td align="left">403</td>
+<td align="left">50014</td>
+<td align="left">no money</td>
+<td align="left">余额不足</td>
+</tr>
+<tr>
+<td align="left">400</td>
+<td align="left">50015</td>
+<td align="left">missing code</td>
+<td align="left">验证码为空</td>
+</tr>
+<tr>
+<td align="left">404</td>
+<td align="left">50016</td>
+<td align="left">api not found</td>
+<td align="left">api不存在</td>
+</tr>
+<tr>
+<td align="left">415</td>
+<td align="left">50017</td>
+<td align="left">media not supported</td>
+<td align="left">媒体类型不支持</td>
+</tr>
+<tr>
+<td align="left">405</td>
+<td align="left">50018</td>
+<td align="left">request method not support</td>
+<td align="left">请求方法不支持</td>
+</tr>
+<tr>
+<td align="left">500</td>
+<td align="left">50019</td>
+<td align="left">server error</td>
+<td align="left">服务端异常</td>
+</tr>
+</tbody>
+</table> </div>
+                        </div> <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../http_status_code/" class="btn btn-neutral float-right" title="HTTP 状态码">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../rest_api_v2_report/" class="btn btn-neutral float-left" title="REST API v2 - Report"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright 2011-2016, jiguang.cn, All Rights Reserved. <br />粤ICP备12056275号-5 深圳市和讯华谷信息技术有限公司</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer> </div>
+                </section>
+            </div>
+            <div class="col-lg-1">
+                <div class="visible-lg">
+                    <div id="tocright">
+                        <div id="navbar-right">
+                            <div>
+                                <p>目录</p>
+                            </div>
+                            
+	<ul class="nav" >
+    
+        
+            <li><a href="#api">发送验证码API</a></li>
+        
+            <li><a href="#api_1">验证API</a></li>
+        
+            <li><a href="#_12">返回码</a></li>
+        
+    
+    </ul>
+    
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

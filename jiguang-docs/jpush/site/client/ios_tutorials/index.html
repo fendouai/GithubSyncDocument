@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+  <html class="no-js lt-ie9" lang="en">
+  <![endif]-->
+<!--[if gt IE 8]>
+    <!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="JPush Offical"> 
+    <title>iOS SDK 教程 - 极光文档</title> 
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../client/im_android_api_docs/stylesheet.css" rel="stylesheet">
+    <link href="../../client/jmessage_ios_appledoc_html/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+    <script>
+    // Current page data
+    var mkdocs_page_name = "iOS SDK 教程";
+    var mkdocs_page_input_path = "client/ios_tutorials.md";
+    var mkdocs_page_url = "/client/ios_tutorials/";
+    </script>
+    
+    <script src="../../js/jpush.js"></script> 
+</head>
+
+<body data-spy="scroll" data-target="#navbar-right">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3  col-md-3  col-sm-3">
+                    <div id="doc-icon">
+                        <a href="http://192.168.10.162/"><img src="/img/icon/logo.png"></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-8  col-sm-8">
+                    <div class="header">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation">
+                                <a href="/jpush/">JPush</a></li>
+                            <li role="presentation">
+                                <a href="/jmessage/">JMessage</a></li>
+                            <li role="presentation">
+                                <a href="/jsms/">短信验证码</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-md-1 col-sm-1">
+                    <div>
+                        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3  col-md-3 col-sm-4">
+                <div id="navbar-left">
+                    <ul class="wy-menu">
+                        
+                        <li class="subnav">
+                            
+                                <ul class="subnavul">
+                                    <li class="subnavli_single">
+                                        <span>
+                          <a href="../..">JPush 文档</a></span>
+                                    </li>
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    入门指南 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../guideline/faq/">常见问题</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/android_guide/">JPush Android 集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/ios_guide/">JPush iOS 集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/winphone_guide/">JPush WinPhone 集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/android_3m/">3 分钟集成 Android SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/sample_code/">示例与代码</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/statistical_report/">控制台使用指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/JSMS_guide/">短信验证</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/Android_SMS_SDK/">Android 短信验证集成指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../guideline/iOS_SMS_SDK/">iOS 短信验证集成指南</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    客户端 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../android_sdk/">Android SDK 概述</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../android_tutorials/">Android SDK 教程</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../android_api/">Android SDK API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../ios_sdk/">iOS SDK 概述</a>
+    </li>      <li class="toctree-l1 current">
+        <a class="current" href="./">iOS SDK 教程</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../ios_api/">iOS SDK API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../winphone_sdk/">WinPhone SDK 概述</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../winphone_api/">WinPhone SDK API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../client_plugins/">客户端集成插件</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    服务器端 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../server/server_overview/">服务器端 概述</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/rest_api_v3_push/">REST API v3 - Push</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/rest_api_v3_report/">REST API v3 - Report</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/rest_api_v3_device/">REST API v3 - Device</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/rest_api_push_schedule/">REST API v3 - Schedule</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/rest_api_v2_push/">REST API v2 - Push</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/rest_api_v2_report/">REST API v2 - Report</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/rest_api_jsms/">短信 REST API</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/http_status_code/">HTTP 状态码</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/java_sdk/">Java SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/python_sdk/">Python SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/php_sdk/">PHP SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/ruby_sdk/">Ruby SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/csharp_sdk/">C# SDK</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../server/nodejs_sdk/">Node.js SDK</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    高级 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../advanced/scenes/">JPush应用场景</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../advanced/topics/">JPush高级话题</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../advanced/rich_push/">Rich Push 入门指南</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../advanced/jmessage_topics/">JMessage高级话题</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    更多 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../more/use_license/">使用许可协议</a>
+    </li>      <li class="toctree-l1 ">
+        <a class="" href="../../more/contact_us/">联系我们</a>
+    </li>  
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                                <ul class="subnavul">
+                                    <li class="subnavli_single">
+                                        <span>
+                          <a href="../../updates/">最近更新</a></span>
+                                    </li>
+                                </ul>
+                                <li>
+                        <li class="subnav">
+                            
+                            <ul class="subnavul">
+                                <li class="subnavli">
+                                    <span>
+                                <a href="#">
+                                    资源下载 
+                                <div class="nav-icon">
+                                    <img src="/img/icon/right.png">
+                                </div>                 
+                                </a>
+                                </span>
+                                </li>
+                                     <li class="toctree-l1 ">
+        <a class="" href="../../resources/">JPush</a>
+    </li>  
+                                </ul>
+                                <li></ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8  col-md-9  col-sm-8">
+                <div id="content-top"></div>
+                <section>
+                    <div class="rst-content"><div id="breadcrumbs" role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">极光文档</a>></li>
+    
+      
+        
+          <li><a href="../android_sdk/">客户端</a> ></li>
+        
+      
+    
+    <li>
+    iOS SDK 教程
+    <!--
+    <a href="./">iOS SDK 教程</a>
+    -->
+    </li>
+  </ul>
+</div>
+                        <div role="main">
+                            <div class="section"> <h1>iOS SDK 教程</h1>
+
+<style>
+img[alt=jpush_ios] { width: 800px; }
+img[alt=jpush_ios_5] { width: 500px; }
+</style>
+
+<h3 id="ios-sdk">iOS SDK 调试指南</h3>
+<h4 id="ios">iOS 调试思维导图</h4>
+<p><img alt="jpush_ios" src="../image/JPushiOS.png" /></p>
+<h4 id="_1">确认证书</h4>
+<p>请到“应用详情页面”确认证书可用性：</p>
+<p><img alt="jpush_ios_5" src="../image/ios_tut_cert_ok.png" /></p>
+<h4 id="_2">开发环境测试</h4>
+<p>在对  JPush iOS 开发环境进行测试前，请确保 3 个统一：</p>
+<ul>
+<li>App 是开发环境打包（开发证书 Development）</li>
+<li>上传了开发证书并验证通过</li>
+<li>Portal 上的应用设置为开发环境</li>
+</ul>
+<h4 id="_3">发布环境测试</h4>
+<p>在对  JPush iOS 生产环境进行测试前，请确保 3 个统一：</p>
+<ul>
+<li>App 是 ad-hoc 打包或者App Store 版本（发布证书 Production）</li>
+<li>上传了发布证书并验证通过</li>
+<li>Portal 上的应用设置为生产环境</li>
+</ul>
+<h4 id="_4">可能存在的其他问题</h4>
+<h5 id="_5">收到消息不够稳定</h5>
+<p>JPush iOS 是对原生官方 APNs 推送的一个补充，是对其的封装，以帮助开发人员更轻松地使用 APNs 。</p>
+<p>由于APNs 本身不承诺保证消息到达，客户端网络与服务器端的连通性，对 APNs 是否及时接收到消息具有很大的影响。</p>
+<h3 id="ios_1">iOS 证书 设置指南</h3>
+<h4 id="id">创建应用程序ID</h4>
+<ul>
+<li>登陆 <a href="https://developer.apple.com/devcenter/ios/index.action">iOS Dev Center</a> 选择进入iOS Provisioning Portal。</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/login.png" /></p>
+<ul>
+<li>在 <a href="https://daw.apple.com/cgi-bin/WebObjects/DSAuthWeb.woa/wa/login?&amp;appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2F%2Faccount%2Findex.action">iOS Provisioning Portal</a>中，点击App IDs进入App ID列表。</li>
+</ul>
+<p><img alt="" src="../image/appid.png" /></p>
+<ul>
+<li>创建 App ID，如果 ID 已经存在可以直接跳过此步骤</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/appid2.png" /></p>
+<ul>
+<li>为 App 开启 Push Notification 功能。如果是已经创建的 App ID 也可以通过设置开启 Push Notification 功能。</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/appservice.png" /></p>
+<p>根据实际情况完善 App ID 信息并提交,注意此处需要指定具体的 Bundle ID 不要使用通配符。</p>
+<p><img alt="jpush_ios" src="../image/appid3.png" /></p>
+<h4 id="_6">配置和下载证书</h4>
+<ul>
+<li>如果你之前没有创建过 Push 证书或者是要重新创建一个新的，请在证书列表下面新建。</li>
+</ul>
+<p><img alt="" src="../image/cer0.png" /></p>
+<ul>
+<li>新建证书需要注意选择证书种类（开发证书用于开发和调试使用，生产证书用于 App Store 发布）</li>
+</ul>
+<p><img alt="" src="../image/cer1.png" /></p>
+<ul>
+<li>点击 Continue 后选择证书对应的应用ID，然后继续会出现“About Creating a Certificate Signing Request (CSR)”。</li>
+</ul>
+<p><img alt="" src="../image/cer2.png" /></p>
+<ul>
+<li>根据它的说明创建打开KeychainAccess 创建 Certificate Signing Request。</li>
+</ul>
+<p><img alt="" src="../image/Screenshot_13-4-1_5_22.png" /></p>
+<ul>
+<li>填写“User Email Address”和“Common Name” 后选择 Saved to disk 进行保存 。</li>
+</ul>
+<p><img alt="" src="../image/Snip20140122_7.png" /></p>
+<ul>
+<li>继续返回Apple developer 网站点击 Continue ，上传刚刚生成的 .certSigningRequest 文件生成 APNs Push  Certificate。</li>
+<li>下载并双击打开证书，证书打开时会启动“钥匙串访问”工具。</li>
+<li>在“钥匙串访问”中你的证书会显示在“我的证书”中，注意选择“My Certificates” 和"login"</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/keychain_cert.png" /></p>
+<h4 id="p12">导出 .p12 证书文件</h4>
+<pre><code>注意要选“login”和“My Certificates” 导出证书时要选中证书文件，不要展开private key。
+</code></pre>
+
+<p><img alt="jpush_ios" src="../image/export_p12.png" /></p>
+<ul>
+<li>将文件保存为Personal Information Exchange (.p12)格式。</li>
+</ul>
+<p><img alt="" src="../image/export_filename.png" /></p>
+<ul>
+<li>将文件保存为Personal Information Exchange (.p12)格式。</li>
+</ul>
+<h4 id="_7">上传证书</h4>
+<p>在 <a href="https://www.jpush.cn/apps/">JPush 管理 Portal 上</a>，针对某应用程序，上传上面步骤得到 .p12 证书文件。这是 iOS SDK 能够接收到 JPush 推送消息的必要步骤。</p>
+<h4 id="provisioning-profile">Provisioning Profile的创建</h4>
+<ul>
+<li>创建Provisioning Profile的前提，已在Apple Developer网站创建待发布应用所使用的Bundle ID的App ID，且为该App ID创建了APNs证书，如下图:</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/appidcer.png" /></p>
+<ul>
+<li>
+<p>创建App ID、APN证书和p12证书的导出的具体步骤请看 :<a href="../../client/ios_tutorials/#ios_1">iOS 证书 设置指南</a></p>
+</li>
+<li>
+<p>在<a href="https://developer.apple.com/account/ios/profile/profileList.action">苹果开发者账号的Provisioning Profile</a>页面点击下图按钮，创建Provisioning Profile</p>
+</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/provision_profile.png" /></p>
+<ul>
+<li>选择此Provisioning Profile的环境后点击[Continue]：</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/create_pp_type.png" /></p>
+<ul>
+<li>选择要创建Provisioning Profile的App ID后点击[Continue]：</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/pp_appid_new.png" /></p>
+<ul>
+<li>选择所属的开发者证书，（这里创建了多个开发者证书，建议只创建一个，方便管理）为了方便，选择了[Select All]，再点击[Continue]进入下一步：</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/select_cer.png" /></p>
+<ul>
+<li>为该Provisioning Profile选择将要安装的设备（一般选择[Select All]），点击[Continue]:</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/select_devices.png" /></p>
+<ul>
+<li>给该Provisioning Profile填写Profile Name，点击[generate]完成创建。</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/pp_name.png" /></p>
+<ul>
+<li>填写完Profile Name后点击[generate]完成创建，之后点击[DownLoad]下载Provisioning Profile</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/download_pp.png" /></p>
+<ul>
+<li>双击下载下来的Provisioning Profile，添加到xcode。</li>
+</ul>
+<h4 id="xcode">XCode的证书配置教程</h4>
+<p>参照<a href="../../../guideline/ios_guide/">iOS SDK 集成指南</a>集成JPush SDK 和上传了推送用到的p12证书后在编译运行前需要先配置一下证书，步骤如下：</p>
+<ul>
+<li>打开xxx-info.plist的Bundle identifier项把上传到JPush 控制台的bundle id填写进去：</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/xcode_bundle.png" /></p>
+<ul>
+<li>点击项目，选择目标TARGETS后进入Build Setting 界面，搜索“Code signing”，按照下图配置</li>
+</ul>
+<p><img alt="jpush_ios" src="../image/xcode_buildsettings_cs.png" /></p>
+<h3 id="ios-7-background-remote-notification">iOS 7 Background Remote Notification</h3>
+<p>本次iOS 7在推送方面最大的变化就是允许，应用收到通知后在后台（background）状态下运行一段代码，可用于从服务器获取内容更新。功能使用场景：（多媒体）聊天，Email更新，基于通知的订阅内容同步等功能，提升了终端用户的体验。</p>
+<p>Remote Notifications 与之前版本的对比可以参考下面两张 Apple 官方的图片便可一目了然。</p>
+<p><img alt="jpush_ios" src="../image/iOS6_push.jpg" /></p>
+<p><img alt="jpush_ios" src="../image/iOS7.png" /></p>
+<p>如果只携带content-available: 1 不携带任何badge，sound 和消息内容等参数，则可以不打扰用户的情况下进行内容更新等操作即为“Silent Remote Notifications”。</p>
+<p><img alt="jpush_ios" src="../image/silent.png" /></p>
+<h4 id="_8">客户端设置</h4>
+<h5 id="remote-notifications">开启Remote notifications</h5>
+<p>需要在Xcode 中修改应用的 Capabilities 开启Remote notifications，请参考下图：</p>
+<p><img alt="" src="../image/Snip20131119_1.png" /></p>
+<h5 id="_9">修改通知处理函数</h5>
+<p>当注册了Backgroud Modes -&gt; Remote notifications 后，notification 处理函数一律切换到下面函数，后台推送代码也在此函数中调用。</p>
+<pre><code>- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler；
+</code></pre>
+<h4 id="_10">服务端推送设置</h4>
+<p>推送消息携带 content-available: 1 是Background 运行的必须参数，如果不携带此字段则与iOS7 之前版本的普通推送一样。</p>
+<h5 id="web-portal">使用Web Portal 推送</h5>
+<p>在“可选设置内”选择对应的参数。</p>
+<p><img alt="" src="../image/push.png" /></p>
+<h5 id="api">使用 API 推送</h5>
+<p>只需在<a href="../../../server/rest_api_v3_push/#notification">Push API v3</a> 的 ios 内附加content-available":true 字段即可</p>
+<h4 id="_11">限制与注意</h4>
+<ul>
+<li>“Silent Remote Notifications”是在 Apple 的限制下有一定的频率控制，但具体频率不详。所以并不是所有的 “Silent Remote Notifications” 都能按照预期到达客户端触发函数。</li>
+<li>“Background”下提供给应用的运行时间窗是有限制的，如果需要下载较大的文件请参考 Apple 的 NSURLSession 的介绍。</li>
+<li>“Background  Remote Notification”  的前提是要求客户端处于Background 或 Suspended 状态，如果用户通过 App Switcher 将应用从后台 Kill 掉应用将不会唤醒应用处理 background 代码。</li>
+</ul>
+<p>更详细的说明资料请查阅 Apple 官方的 iOS 开发文档。</p>
+<h3 id="ios-8-uiusernotificationsettings">iOS 8 UIUserNotificationSettings</h3>
+<h4 id="_12">支持版本</h4>
+<p>v1.8.0 版本开始。</p>
+<ul>
+<li>本次iOS 8在推送方面最大的变化就是修改了推送的注册接口，在原本的推送type的基础上，增加了一个categories参数，这个参数的目的是用来注册一组和通知关联起来的button的事件。</li>
+<li>这个categories由一系列的 UIUserNotificationCategory组成。每个UIUserNotificationCategory对象包含你的app用来响应本地或者远程通知的信息。每一个对象的title作为通知上每一个button的title展示给用户。当用户点击了某一个button，系统将会调用应用内的回调函数<a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIApplicationDelegate_Protocol/index.html#//apple_ref/occ/intfm/UIApplicationDelegate/application:handleActionWithIdentifier:forRemoteNotification:completionHandler:">application:handleActionWithIdentifier:forRemoteNotification:completionHandler:</a>或者<a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIApplicationDelegate_Protocol/index.html#//apple_ref/occ/intfm/UIApplicationDelegate/application:handleActionWithIdentifier:forLocalNotification:completionHandler:">application:handleActionWithIdentifier:forLocalNotification:completionHandler:</a>。</li>
+</ul>
+<h4 id="_13">客户端设置</h4>
+<h5 id="uiusernotificationcategory">使用UIUserNotificationCategory</h5>
+<pre><code>if ([[UIDevice currentDevice].systemVersion floatValue] &gt;= 8.0) {
+
+ NSMutableSet *categories = [NSMutableSet set];
+
+ UIMutableUserNotificationCategory *category = [[UIMutableUserNotificationCategory alloc] init];
+
+ category.identifier = @&quot;identifier&quot;;
+
+ UIMutableUserNotificationAction *action = [[UIMutableUserNotificationAction alloc] init];
+
+ action.identifier = @&quot;test2&quot;;
+
+ action.title = @&quot;test&quot;;
+
+ action.activationMode = UIUserNotificationActivationModeBackground;
+
+ action.authenticationRequired = YES;
+
+ //YES显示为红色，NO显示为蓝色
+ action.destructive = NO;
+
+ NSArray *actions = @[ action ];
+
+ [category setActions:actions forContext:UIUserNotificationActionContextMinimal];
+
+ [categories addObject:category];
+}
+</code></pre>
+
+<h5 id="uiusernotificationtype">使用UIUserNotificationType</h5>
+<pre><code>if ([[UIDevice currentDevice].systemVersion floatValue] &gt;= 8.0) {
+[APService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)                      categories:categories];
+}else{
+[APService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)                      categories:nil];
+}
+</code></pre>
+
+<h5 id="_14">使用回调函数</h5>
+<pre><code>// Called when your app has been activated by the user selecting an action from
+// a remote notification.
+// A nil action identifier indicates the default action.
+// You should call the completion handler as soon as you've finished handling
+// the action.
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo
+  completionHandler:(void (^)())completionHandler {
+}
+</code></pre>
+
+<h4 id="_15">服务端设置</h4>
+<p>服务端payload格式:aps增加category字段，当该字段与客户端UIMutableUserNotificationCategory的identifier匹配时，触发设定的action和button显示。</p>
+<pre><code>payload example:
+{&quot;aps&quot;:{&quot;alert&quot;:&quot;example&quot;, &quot;sound&quot;:&quot;default&quot;, &quot;badge&quot;: 1, &quot;category&quot;:&quot;identifier&quot;}}
+
+</code></pre>
+
+<h3 id="ios-9-uiusernotificationactionbehaviortextinput">iOS 9 UIUserNotificationActionBehaviorTextInput</h3>
+<h4 id="_16">支持版本</h4>
+<p>v1.8.0 版本开始</p>
+<ol>
+<li>本次iOS 9在推送方面最大的变化就是修改了推送Category的类型，在原本的推送categories的基础上，增加了一个text Action类型，这个参数的目的是用来注册通过通知快捷文字输入的事项。</li>
+<li>这个categories由一系列的 UIUserNotificationCategory组成。每个UIUserNotificationCategory对象允许添加一组UIMutableUserNotificationAction类型的参数来增加通知栏上的项目。如今iOS9在原有的UIMutableUserNotificationAction类型增加了Text输入类型(UIUserNotificationActionBehaviorTextInput),通过behavior来设置(只有iOS9才拥有的属性)。</li>
+<li>回调的方法iOS9使用了两个新的回调方法来处理点击按钮的事件:</li>
+</ol>
+<pre><code>- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullableNSString *)identifier forLocalNotification:(UILocalNotification *)notification withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void(^)())completionHandler NS_AVAILABLE_IOS(9_0)
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullableNSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void(^)())completionHandler NS_AVAILABLE_IOS(9_0)
+
+</code></pre>
+
+<p><strong>说明</strong>:</p>
+<ul>
+<li>
+<p>当Action为UIUserNotificationActionBehaviorTextInput时,需要通过responseInfo的UIUserNotificationActionResponseTypedTextKey来获取输入的文字内容,UIUserNotificationTextInputActionButtonTitleKey获取点击的按钮类型.</p>
+</li>
+<li>
+<p>当Action为UIUserNotificationActionBehaviorDefault时,responseInfo为nil,通过identifier来区分点击按钮分别是什么来做处理. </p>
+</li>
+</ul>
+<h4 id="_17">客户端设置</h4>
+<p><strong>设置带有快速回复内容的通知</strong></p>
+<pre><code>#ifdef __IPHONE_9_0 
+ UIMutableUserNotificationAction *replyAction = [[UIMutableUserNotificationAction alloc]init];
+ replyAction.title = @&quot;Reply&quot;;
+ replyAction.identifier = @&quot;comment-reply&quot;;
+ replyAction.activationMode = UIUserNotificationActivationModeBackground;
+ replyAction.behavior = UIUserNotificationActionBehaviorTextInput;
+
+ UIMutableUserNotificationCategory *category = [[UIMutableUserNotificationCategory alloc]init];
+ category.identifier = @&quot;reply&quot;;
+ [category setActions:@[replyAction] forContext:UIUserNotificationActionContextDefault];
+#endif
+</code></pre>
+
+<p><strong>使用回调函数</strong></p>
+<pre><code>- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void(^)())completionHandler NS_AVAILABLE_IOS(9_0) {
+ if ([identifier isEqualToString:@&quot;comment-reply&quot;]) {
+ NSString *response = responseInfo[UIUserNotificationActionResponseTypedTextKey];
+ //对输入的文字作处理
+ }
+ completionHandler();
+ }
+</code></pre>
+
+<h4 id="_18">服务端设置</h4>
+<p>服务端payload格式:aps增加category字段，当该字段与客户端UIMutableUserNotificationCategory的identifier匹配时，触发设定的action和button显示。</p>
+<pre><code>payload example:
+{&quot;aps&quot;:{&quot;alert&quot;:&quot;example&quot;, &quot;sound&quot;:&quot;default&quot;, &quot;badge&quot;: 1, &quot;category&quot;:&quot;reply&quot;}}
+</code></pre>
+
+<h3 id="ios-8-uilocalnotification">iOS 8 UILocalNotification</h3>
+<p>本次iOS 8 UILocalNotification增加了三个参数: region、regionTriggersOnce、category。</p>
+<ul>
+<li>region: 用于控制当用户进入或者离开某一个地理位置时候，触发通知。使用此功能，用户需要拥有CoreLocation的"when-in-use"权限。</li>
+<li>regionTriggersOnce(BOOL)：当为YES时，通知只会触发一次，当为NO时，通知将会在每一次进入或者离开时都触发。</li>
+<li>category:如果localNotification通过+[UIUserNotificationSettings settingsForUserNotificationTypes:userNotificationActionSettings:]注册了，通过该category可以获取该通知的注册category.</li>
+</ul>
+<h4 id="_19">客户端设置</h4>
+<h5 id="uilocalnotification">使用UILocalNotification</h5>
+<pre><code>// set localNotification
+  CLLocationCoordinate2D coordinate2D;
+  coordinate2D.latitude = 100.0;
+  coordinate2D.longitude = 100.0;
+  CLRegion *currentRegion =
+      [[CLCircularRegion alloc] initWithCenter:coordinate2D
+                                        radius:CLLocationDistanceMax
+                                    identifier:@&quot;test&quot;];
+
+  [APService setLocalNotification:[NSDate dateWithTimeIntervalSinceNow:120]
+                        alertBody:@&quot;test ios8 notification&quot;
+                            badge:0
+                      alertAction:@&quot;取消&quot;
+                    identifierKey:@&quot;1&quot;
+                         userInfo:nil
+                        soundName:nil
+                           region:currentRegion
+               regionTriggersOnce:YES
+                         category:@&quot;test&quot;];
+</code></pre> </div>
+                        </div> <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ios_api/" class="btn btn-neutral float-right" title="iOS SDK API">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../ios_sdk/" class="btn btn-neutral float-left" title="iOS SDK 概述"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright 2011-2016, jiguang.cn, All Rights Reserved. <br />粤ICP备12056275号-5 深圳市和讯华谷信息技术有限公司</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer> </div>
+                </section>
+            </div>
+            <div class="col-lg-1">
+                <div class="visible-lg">
+                    <div id="tocright">
+                        <div id="navbar-right">
+                            <div>
+                                <p>目录</p>
+                            </div>
+                            
+	<ul class="nav" >
+    
+        
+            <li><a href="#ios">iOS 调试思维导图</a></li>
+        
+            <li><a href="#_1">确认证书</a></li>
+        
+            <li><a href="#_2">开发环境测试</a></li>
+        
+            <li><a href="#_3">发布环境测试</a></li>
+        
+            <li><a href="#_4">可能存在的其他问题</a></li>
+        
+    
+        
+            <li><a href="#id">创建应用程序ID</a></li>
+        
+            <li><a href="#_6">配置和下载证书</a></li>
+        
+            <li><a href="#p12">导出 .p12 证书文件</a></li>
+        
+            <li><a href="#_7">上传证书</a></li>
+        
+            <li><a href="#provisioning-profile">Provisioning Profile的创建</a></li>
+        
+            <li><a href="#xcode">XCode的证书配置教程</a></li>
+        
+    
+        
+            <li><a href="#_8">客户端设置</a></li>
+        
+            <li><a href="#_10">服务端推送设置</a></li>
+        
+            <li><a href="#_11">限制与注意</a></li>
+        
+    
+        
+            <li><a href="#_12">支持版本</a></li>
+        
+            <li><a href="#_13">客户端设置</a></li>
+        
+            <li><a href="#_15">服务端设置</a></li>
+        
+    
+        
+            <li><a href="#_16">支持版本</a></li>
+        
+            <li><a href="#_17">客户端设置</a></li>
+        
+            <li><a href="#_18">服务端设置</a></li>
+        
+    
+        
+            <li><a href="#_19">客户端设置</a></li>
+        
+    
+    </ul>
+    
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

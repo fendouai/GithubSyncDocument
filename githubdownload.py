@@ -2,13 +2,17 @@ import requests
 import os
 from bs4 import BeautifulSoup
 import dirconfig
+import logging
 
 class GithubDownload():
     def __init__(self):
         pass
     
     def get_html(self,url):
-        result=requests.get(url)
+        try:
+            result=requests.get(url)
+        except:
+            logging.info("get the github page failed")
         if(result.status_code==200):
             html_content = BeautifulSoup(result.content, "html.parser")
         return html_content
@@ -39,11 +43,10 @@ class GithubDownload():
         return release_version
 
     def get_dir(self,name,version):
-        print os.path.exists(name)
         file_dir = os.path.join(dirconfig.conf["zip"], name)
         print file_dir
         zip_name = version + ".zip"
         zip_dir = os.path.join(file_dir, zip_name)
-        print zip_dir
+        print os.path.exists(zip_dir)
         return zip_dir
 
